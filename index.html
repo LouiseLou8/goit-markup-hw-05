@@ -475,11 +475,11 @@
             </li>
           </ul>
         </div>
+
         <div class="subscribe">
           <p class="subscribe-text">Subscribe</p>
-
-          <div class="subscribe-wrapper">
-            <div class="subscribe-icon-wrapper">
+          <form class="subscribe-wrapper">
+            <label class="footer-label" for="form-email-footer">
               <input
                 class="subscribe-input"
                 type="email"
@@ -488,14 +488,13 @@
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 placeholder="E-mail"
               />
-            </div>
-            <div class="img-btn-wrapper">
-              <button class="subscribe-btn" type="submit">Subscribe</button>
-              <svg class="subscribe-img" width="24" height="24">
-                <use href="./images/icons.svg#icon-footer-btn"></use>
-              </svg>
-            </div>
-          </div>
+            </label>
+
+            <button class="subscribe-btn" type="submit">Subscribe</button>
+            <svg class="subscribe-img" width="24" height="24">
+              <use href="./images/icons.svg#icon-footer-btn"></use>
+            </svg>
+          </form>
         </div>
       </div>
     </footer>
