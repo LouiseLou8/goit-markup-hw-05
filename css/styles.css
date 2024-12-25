@@ -634,7 +634,7 @@ button:focus {
   border: none;
 }
 .form-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .form-user-label {
   font-weight: 400;
