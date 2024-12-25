@@ -524,11 +524,7 @@ button:focus {
 }
 
 .subscribe-img {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
-  fill: #fff;
+  margin-left: 16px;
 }
 .subscribe-input {
   border: 1px solid #fff;
@@ -539,18 +535,16 @@ button:focus {
   padding-left: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
-}
-.subscribe-input::placeholder {
-  font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #ffffff;
+}
+.subscribe-input::placeholder {
 }
 .subscribe-btn {
   border-radius: 4px;
   padding: 8px 0px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
@@ -560,7 +554,9 @@ button:focus {
   text-align: center;
   color: #fff;
   border: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* backdrop */
@@ -597,6 +593,7 @@ button:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
   font-weight: 500;
@@ -614,7 +611,7 @@ button:focus {
   position: absolute;
   top: 24px;
   right: 24px;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
