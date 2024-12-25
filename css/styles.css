@@ -592,7 +592,7 @@ button:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
@@ -615,14 +615,17 @@ button:focus {
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
-
-  fill: #2e2f42;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2e2f42;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.modal-close-img {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
@@ -631,16 +634,16 @@ button:focus {
   fill: #fff;
 }
 .form-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .form-user-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 8px;
   display: block;
+  margin-bottom: 4px;
+  line-height: 1.17;
 }
 .form-user-input {
   width: 100%;
@@ -650,6 +653,9 @@ button:focus {
   outline: none;
   padding-left: 38px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-user-icon {
   position: absolute;
@@ -679,6 +685,13 @@ button:focus {
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-coment:focus {
@@ -686,11 +699,6 @@ button:focus {
 }
 
 .form-coment::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
 }
 .privacy-text {
   line-height: 1.33333;
@@ -709,9 +717,9 @@ button:focus {
   height: 16px;
   fill: transparent;
   margin-right: 8px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-area {
@@ -719,13 +727,13 @@ button:focus {
 }
 .checkbox:checked + .form-user-checkbox .custom-checkbox {
   background-color: #404bbf;
-  border: 1px solid #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
 .form-user-checkbox {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -738,7 +746,7 @@ button:focus {
 .form-btn {
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
@@ -753,4 +761,5 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 169px;
 }

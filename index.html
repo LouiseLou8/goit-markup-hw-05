@@ -512,13 +512,13 @@
 
         <form>
           <div class="form-wrapper">
-            <label class="form-user-label" for="form-user">Name</label>
+            <label class="form-user-label" for="user-name">Name</label>
             <div class="form-user-icon-wrapper">
               <input
                 class="form-user-input"
                 type="text"
-                id="form-user"
-                name="form-user"
+                id="user-name"
+                name="user-name"
                 required
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
               />
@@ -558,13 +558,13 @@
               </svg>
             </div>
           </div>
+
           <div class="form-wrapper">
-            <label class="form-user-label" for="form-user-coment"
-              >Comment</label
-            >
+            <label class="form-user-label" for="user-comment">Comment</label>
             <textarea
               class="form-coment"
-              id="form-user-coment"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -572,11 +572,12 @@
             <input
               class="checkbox visually-hidden"
               type="checkbox"
-              name="checkbox"
-              id="form-user-checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
               required
             />
-            <label class="form-user-checkbox" for="form-user-checkbox"
+            <label class="form-user-checkbox" for="user-privacy"
               ><span class="custom-checkbox"
                 ><svg class="custom-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
