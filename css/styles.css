@@ -605,7 +605,6 @@ button:focus {
   color: #2e2f42;
   width: 100%;
   margin-bottom: 16px;
-  margin-top: 48px;
 }
 .modal-close {
   position: absolute;
@@ -632,9 +631,10 @@ button:focus {
 .modal-close:focus {
   background-color: #404bbf;
   fill: #fff;
+  border: none;
 }
 .form-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .form-user-label {
   font-weight: 400;
